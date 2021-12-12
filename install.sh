@@ -22,7 +22,9 @@ rsync \
 ttf-ubuntu-font-family \
 materia-gtk-theme \
 papirus-icon-theme \
-lxappearance
+lxappearance \
+i3 \
+reflector
 
 fi
 
