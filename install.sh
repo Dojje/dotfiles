@@ -16,14 +16,20 @@ firefox \
 wget \
 htop \
 thunar \
+
 rofi \
 dmenu \
+
 rsync \
 ttf-ubuntu-font-family \
 materia-gtk-theme \
 papirus-icon-theme \
 lxappearance \
 i3 \
+i3-wm \
+i3lock \
+i3status \
+i3blocks \
 reflector
 
 fi
