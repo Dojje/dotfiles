@@ -47,6 +47,9 @@ mv ~/.config/i3status/i3status.conf ~/.old-dotfiles/.config/i3status/i3status.co
 mkdir -p ~/.old-dotfiles/.config/rofi/
 mv ~/.config/rofi/config ~/.old-dotfiles/.config/rofi/config
 
+mkdir -p ~/.old-dotfiles/.xinitrc/
+mv ~/.xinitrc ~/.old-dotfiles/.xinitrc
+
 echo "moved dotfiles"
 
 # add symlinks
@@ -71,4 +74,7 @@ ln -s ~/.dotfiles/.config/rofi/config ~/.config/rofi/config
 # for rofi theme
 # it's unnecicerry to create extra folders because it's going into the same folder as rofi config
 ln -s ~/.dotfiles/.config/rofi/devdeo_nord.rasi ~/.config/rofi/devdeo_nord.rasi
+
+# For xinitrc
+sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
