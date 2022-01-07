@@ -34,6 +34,8 @@ reflector
 
 fi
 
+sudo reflector -c Sweden -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+
 echo "This will copy any already existing dotfiles to .old-dotfiles directory"
 
 
