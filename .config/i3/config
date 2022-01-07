@@ -194,7 +194,7 @@ exec_always feh --bg-fill ~/Documents/Wallpapers/arch/0.jpg
 focus_follows_mouse no
 
 # lock keybind
-bindsym $mod+l exec ~/i3lock-color/lock.sh
+bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
 # colors
 
