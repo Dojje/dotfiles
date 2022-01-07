@@ -5,32 +5,36 @@ read -p 'Install Packages? [y/n]: ' instpkg
 if [ $instpkg == "y" ]
 then
 
+# Update the system
+sudo pacman -Syu
+
 # download pacman packages
-sudo pacman -S htop \
-xorg \
-xorg-server \
-xorg-init \
-xf86-video-fbdev \
-picom \
-firefox \
-wget \
-htop \
-thunar \
+sudo pacman -S htop
+sudo pacman -S xorg
+sudo pacman -S xorg-server
+sudo pacman -S xorg-xinit
+sudo pacman -S xf86-video-fbdev
+sudo pacman -S picom
+sudo pacman -S firefox
+sudo pacman -S get
+sudo pacman -S htop
+sudo pacman -S thunar
 
-rofi \
-dmenu \
+sudo pacman -S rofi
+sudo pacman -S dmenu
 
-rsync \
-ttf-ubuntu-font-family \
-materia-gtk-theme \
-papirus-icon-theme \
-lxappearance \
-i3 \
-i3-wm \
-i3lock \
-i3status \
-i3blocks \
-reflector
+sudo pacman -S rsync
+sudo pacman -S ttf-ubuntu-font-family
+sudo pacman -S materia-gtk-theme
+sudo pacman -S papirus-icon-theme
+sudo pacman -S lxappearance
+sudo pacman -S i3
+sudo pacman -S i3wm
+sudo pacman -S i3lock
+sudo pacman -S i3status
+sudo pacman -S i3blocks
+sudo pacman -S reflector
+sudo pacman -S terminator
 
 fi
 
@@ -62,27 +66,27 @@ echo "moved dotfiles"
 
 # add symlinks
 # for .gitconfig
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
 # for .bashrc
-ln -s ~/.dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
 
 # for i3 config
 mkdir -p ~/.config/i3/
-ln -s ~/.dotfiles/.config/i3/config ~/.config/i3/config
+ln -s ~/dotfiles/.config/i3/config ~/.config/i3/config
 
 # for i3status
 mkdir -p ~/.config/i3status/
-ln -s ~/.dotfiles/.config/i3status/i3status.conf ~/.config/i3status/i3status.conf
+ln -s ~/dotfiles/.config/i3status/i3status.conf ~/.config/i3status/i3status.conf
 
 # for rofi config
 mkdir -p ~/.config/rofi
-ln -s ~/.dotfiles/.config/rofi/config ~/.config/rofi/config
+ln -s ~/dotfiles/.config/rofi/config ~/.config/rofi/config
 
 # for rofi theme
 # it's unnecicerry to create extra folders because it's going into the same folder as rofi config
-ln -s ~/.dotfiles/.config/rofi/devdeo_nord.rasi ~/.config/rofi/devdeo_nord.rasi
+ln -s ~/dotfiles/.config/rofi/devdeo_nord.rasi ~/.config/rofi/devdeo_nord.rasi
 
 # For xinitrc
-sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
+ln -s ~/dotfiles/.xinitrc ~/.xinitrc
 
