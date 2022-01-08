@@ -96,3 +96,5 @@ mkdir -p ~/.config/i3lock-color
 ln -s ~/dotfiles/.config/i3lock-color/lock.sh ~/.config/i3lock-color/lock.sh
 sudo chmod +x ~/dotfiles/.config/i3lock-color/lock.sh
 
+# For background 
+ln -s ~/dotfiles/.config/i3/background.jpg ~/.config/i3/background.jpg
