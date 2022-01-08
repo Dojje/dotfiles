@@ -33,6 +33,14 @@ i3status \
 i3blocks \
 reflector \
 terminator \
+urxvt-unicode \
+
+cd ~
+
+# install yum 
+git clone https://aur.archlinux.org/yum.git ~/
+cd yum
+makepkg -sri
 
 fi
 # it cannot use relector before installing relector
@@ -98,3 +106,7 @@ sudo chmod +x ~/dotfiles/.config/i3lock-color/lock.sh
 
 # For background 
 ln -s ~/dotfiles/.config/i3/background.jpg ~/.config/i3/background.jpg
+
+# For .Xresources
+ln -s ~/dotfiles/.Xresources ~/.Xresources
+xrdb ~/.Xresources 
