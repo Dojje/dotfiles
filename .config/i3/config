@@ -200,7 +200,7 @@ bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
 # i3 stuff
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border none
 
 # colors
 # text
@@ -213,7 +213,7 @@ set $ubgcolor #ff0000
 set $bgcolor #303030
 set $ibgcolor #101010
 
-set $border #303030
+set $border #00ff00
 set $iborder #303030
 
 # ws means workspace
