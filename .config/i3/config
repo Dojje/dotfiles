@@ -179,16 +179,18 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
+# i3 standard stuff ends here
 
+# Do some initial setup for launching
 # set keyboard map
 exec_always setxkbmap se
 
 # set display resolution
-# exec_always xrandr --output Virtual-1 --mode 1920x1080 # disabled because arandr is much cooler and pogger
-exec_always ~/.screenlayout/virtual1.sh
+exec_always xrandr --output Virtual-1 --mode 1920x1080 # disabled because arandr is much cooler and pogger
+# exec_always ~/.screenlayout/virtual1.sh
 
 # set display wallpaper
-exec_always feh --bg-fill ~/.config/i3/background.jpg
+#exec_always feh --bg-fill ~/.config/i3/background.jpg
 
 # turn off focus on hover
 focus_follows_mouse no
@@ -196,8 +198,11 @@ focus_follows_mouse no
 # lock keybind
 bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
-# colors
+# i3 stuff
 
+for_window [class="^.*"] border pixel 2
+
+# colors
 # text
 set $txt #ffffff
 set $itxt #e5e5e5
