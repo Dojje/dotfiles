@@ -16,7 +16,6 @@ xorg-xinit \
 xf86-video-fbdev \
 picom \
 firefox \
-get \
 htop \
 thunar \
 rofi \
@@ -34,12 +33,17 @@ reflector \
 terminator \
 urxvt-unicode \
 
-cd ~
 
 # install yum 
-git clone https://aur.archlinux.org/yum.git ~/
-cd yum
+git clone https://aur.archlinux.org/yay.git ~/yay/
+cd ~/yay
 makepkg -sri
+
+# Install fonts
+yay -S nerd-fonts-complete
+
+cd ~
+
 
 fi
 # it cannot use relector before installing relector
@@ -94,6 +98,7 @@ ln -s ~/dotfiles/.config/rofi/config ~/.config/rofi/config
 # for rofi theme
 # it's unnecicerry to create extra folders because it's going into the same folder as rofi config
 ln -s ~/dotfiles/.config/rofi/config.rasi ~/.config/rofi/config.rasi
+ln -s ~/dotfiles/.config/rofi/colors.rasi ~/.config/rofi/colors.rasi
 
 # For xinitrc
 ln -s ~/dotfiles/.xinitrc ~/.xinitrc
