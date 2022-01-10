@@ -31,7 +31,7 @@ i3status \
 i3blocks \
 reflector \
 terminator \
-urxvt-unicode \
+rxvt-unicode \
 
 
 # install yum 
