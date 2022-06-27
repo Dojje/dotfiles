@@ -92,13 +92,7 @@ mkdir -p ~/.config/i3status/
 ln -s ~/dotfiles/.config/i3status/i3status.conf ~/.config/i3status/i3status.conf
 
 # for rofi config
-mkdir -p ~/.config/rofi
-ln -s ~/dotfiles/.config/rofi/config ~/.config/rofi/config
-
-# for rofi theme
-# it's unnecicerry to create extra folders because it's going into the same folder as rofi config
-ln -s ~/dotfiles/.config/rofi/config.rasi ~/.config/rofi/config.rasi
-ln -s ~/dotfiles/.config/rofi/colors.rasi ~/.config/rofi/colors.rasi
+ln -s ~/dotfiles/.config/rofi/ ~/.config/rofi/
 
 # For xinitrc
 ln -s ~/dotfiles/.xinitrc ~/.xinitrc
