@@ -114,3 +114,10 @@ ln -s ~/dotfiles/.config/i3/background.jpg ~/.config/i3/background.jpg
 # For .Xresources
 ln -s ~/dotfiles/.Xresources ~/.Xresources
 xrdb ~/.Xresources 
+
+# polybar
+yay -S polybar
+
+ln -s ~/dotfiles/.config/polybar ~/.config/polybar
+
+

@@ -186,7 +186,8 @@ bindsym $mod+r mode "resize"
 exec_always setxkbmap se
 
 # set display resolution
-exec_always xrandr --output Virtual-1 --mode 1920x1080 # disabled because arandr is much cooler and pogger
+# disabled because arandr is much cooler and pogger
+exec_always xrandr --output Virtual1 --mode 1920x1080 
 # exec_always ~/.screenlayout/virtual1.sh
 
 # set display wallpaper
@@ -202,72 +203,6 @@ bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
 for_window [class="^.*"] border none
 
-## colors
-# i am using the catppuccin mocha theme
-# the comments above colors tells what color it is
+# start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Text
-set $txt #cdd6f4
-
-# Subtext0
-set $itxt #a6adc8
-
-## Urgent background color
-# red
-set $ubgcolor #f38ba8
-
-# Base
-set $bgcolor #1e1e2e
-
-# Surface0
-set $ibgcolor #313244
-
-# Surface1
-set $border #45475a
-
-# Surface2
-set $iborder #585b70
-
-# ws means workspace
-
-# Surface1
-set $barwscolor #45475a
-
-# Surface0
-set $bariwscolor #6c7086
-
-# Crust
-set $barbgcolor #11111b
-
-# outline is around window top
-# background is the window top
-# text is of course text
-# indicator is to the right of the window i think
-# child border is the bottom left and right border
-
-# class                 outline		backgr.		text		indicator	child_border
-client.focused         	$bgcolor 	$bgcolor 	$txt	 	$border		$border
-client.focused_inactive $ibgcolor 	$ibgcolor 	$itxt		$iborder	$iborder
-client.unfocused        $ibgcolor 	$ibgcolor 	$itxt	 	$iborder	$iborder
-client.urgent		$ubgcolor 	$ubgcolor 	$txt		$ubgcolor	$ubgcolor
-client.placeholder      #000000 	#0c0c0c 	#ffffff 	#000000		#0c0c0c
-
-client.background       #ffffff
-
-bar {
-        status_command i3status -c ~/.config/i3status/i3status.conf
-
-	colors {
-		# 		color
-		background	$barbgcolor
-		statusline	#ffffff
-		separator	$itxt
-		
-		# colorclass		border		backgr.		text
-		focused_workspace	$barwscolor	$barwscolor	$txt
-		active_workspace	$barwscolor	$barwscolor	$txt
-		inactive_workspace	$bariwscolor	$bariwscolor	$itxt
-		urgent_workspace	$ubgcolor	$ubgcolor	$txt
-		binding_mode		#2f343a		#900000		#ffffff
-	}
-}
