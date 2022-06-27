@@ -1,37 +1,38 @@
 #!/bin/sh
 
 BLANK='#00000000'
-CLEAR='#ffffff22'
-DEFAULT='#ff00ffcc'
-TEXT='#ee00eeee'
-WRONG='#880000bb'
-VERIFYING='#bb00bbbb'
+
+RING='#6c7086'
+TEXT='#cdd6f4'
+PRESS='#74c7ec'
+
+WRONG='#f38ba8'
+VERIFYING='#cba6f7'
 
 i3lock \
---insidever-color=$CLEAR     \
+--insidever-color=$BLANK \
 --ringver-color=$VERIFYING   \
 \
---insidewrong-color=$CLEAR   \
+--insidewrong-color=$BLANK \
 --ringwrong-color=$WRONG     \
 \
 --inside-color=$BLANK        \
---ring-color=$DEFAULT        \
+--ring-color=$RING \
 --line-color=$BLANK          \
---separator-color=$DEFAULT   \
+--separator-color=$RING \
 \
---verif-color=$TEXT          \
---wrong-color=$TEXT          \
+--verif-color=$VERIFYING \
+--wrong-color=$WRONG \
 --time-color=$TEXT           \
 --date-color=$TEXT           \
 --layout-color=$TEXT         \
---keyhl-color=$WRONG         \
---bshl-color=$WRONG          \
+--keyhl-color=$PRESS \
+--bshl-color=$PRESS \
 \
 --screen 1                   \
 --blur 5                     \
 --clock                      \
 --indicator                  \
 --time-str="%H:%M:%S"        \
---date-str="%A, %m %Y"       \
---keylayout 1                \
+--date-str="%Y-%m-%d"       \
 

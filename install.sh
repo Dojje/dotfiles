@@ -26,7 +26,6 @@ materia-gtk-theme \
 papirus-icon-theme \
 lxappearance \
 i3-wm \
-i3lock \
 i3status \
 i3blocks \
 reflector \
@@ -39,8 +38,10 @@ git clone https://aur.archlinux.org/yay.git ~/yay/
 cd ~/yay
 makepkg -sri
 
-# Install fonts
-yay -S nerd-fonts-complete
+# Install yay stuff
+yay -S nerd-fonts-complete \
+polybar \
+i3lock-color
 
 cd ~
 
@@ -110,8 +111,6 @@ ln -s ~/dotfiles/.Xresources ~/.Xresources
 xrdb ~/.Xresources 
 
 # polybar
-yay -S polybar
-
 ln -s ~/dotfiles/.config/polybar ~/.config/polybar
 
 

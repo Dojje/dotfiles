@@ -13,6 +13,7 @@
     surface0: #1e1e2e;
     base: #181825;
 
+    font: "hack 15";
 }
 window {
     background-color: @base;
@@ -44,6 +45,7 @@ element {
     border-radius: 20px;
     padding: 10px;
    
+    font: @font;
 }
 element-text {
     background-color: inherit;
