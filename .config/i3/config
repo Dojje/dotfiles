@@ -202,25 +202,42 @@ bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
 for_window [class="^.*"] border none
 
-# colors
-# text
-set $txt #ffffff
-set $itxt #e5e5e5
+## colors
+# i am using the catppuccin mocha theme
+# the comments above colors tells what color it is
 
-# Urgent background color
-set $ubgcolor #ff0000
+# Text
+set $txt #cdd6f4
 
-set $bgcolor #303030
-set $ibgcolor #101010
+# Subtext0
+set $itxt #a6adc8
 
-set $border #00ff00
-set $iborder #303030
+## Urgent background color
+# red
+set $ubgcolor #f38ba8
+
+# Base
+set $bgcolor #1e1e2e
+
+# Surface0
+set $ibgcolor #313244
+
+# Surface1
+set $border #45475a
+
+# Surface2
+set $iborder #585b70
 
 # ws means workspace
-set $barwscolor #303030
-set $bariwscolor #000000
 
-set $barbgcolor #000000
+# Surface1
+set $barwscolor #45475a
+
+# Surface0
+set $bariwscolor #6c7086
+
+# Crust
+set $barbgcolor #11111b
 
 # outline is around window top
 # background is the window top
