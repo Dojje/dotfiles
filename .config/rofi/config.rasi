@@ -14,12 +14,15 @@
     base: #181825;
 
     font: "hack 15";
+    transparent: rgba(0,0,0,0);
+    background-color: transparent;
 }
 window {
     background-color: @base;
     border:           0;
     border-radius: 20px;
     padding:          20px 15px;
+    transparency: "screenshot";
 }
 mainbox {
     border:  0;
