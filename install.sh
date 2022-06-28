@@ -29,11 +29,11 @@ i3-wm \
 i3status \
 i3blocks \
 reflector \
-terminator \
+alacritty \
 rxvt-unicode \
 
 
-# install yum 
+# install yay 
 git clone https://aur.archlinux.org/yay.git ~/yay/
 cd ~/yay
 makepkg -sri
@@ -41,7 +41,8 @@ makepkg -sri
 # Install yay stuff
 yay -S nerd-fonts-complete \
 polybar \
-i3lock-color
+i3lock-color \
+ttf-fira-code \
 
 cd ~
 
@@ -113,4 +114,6 @@ xrdb ~/.Xresources
 # polybar
 ln -s ~/dotfiles/.config/polybar ~/.config/polybar
 
+# alacritty
+ln -s ~/dotfiles/.config/alacritty ~/.config/alacritty
 
