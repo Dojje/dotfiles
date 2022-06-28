@@ -191,7 +191,7 @@ exec_always xrandr --output Virtual1 --mode 1920x1080
 # exec_always ~/.screenlayout/virtual1.sh
 
 # set display wallpaper
-#exec_always feh --bg-fill ~/.config/i3/background.jpg
+# exec_always feh --bg-fill ~/.config/i3/background.jpg
 
 # turn off focus on hover
 focus_follows_mouse no
