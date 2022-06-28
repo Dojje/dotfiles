@@ -191,7 +191,7 @@ exec_always xrandr --output Virtual1 --mode 1920x1080
 # exec_always ~/.screenlayout/virtual1.sh
 
 # set display wallpaper
-# exec_always feh --bg-fill ~/.config/i3/background.jpg
+exec_always feh --bg-fill ~/backgrounds/vapor.jpg
 
 # turn off focus on hover
 focus_follows_mouse no
@@ -206,4 +206,9 @@ gaps outer 0
 
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# start picom
+#exec_always picom --experimental-backends -b
+# disabled because picom makes my virtual machine freeze
+# you can try to enable it if you want to, hopefully it doesn't freeze =)
 

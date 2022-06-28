@@ -14,7 +14,6 @@ xorg \
 xorg-server \
 xorg-xinit \
 xf86-video-fbdev \
-picom \
 firefox \
 htop \
 thunar \
@@ -31,6 +30,8 @@ i3blocks \
 reflector \
 alacritty \
 rxvt-unicode \
+feh \
+picom \
 
 
 # install yay 
@@ -116,4 +117,10 @@ ln -s ~/dotfiles/.config/polybar ~/.config/polybar
 
 # alacritty
 ln -s ~/dotfiles/.config/alacritty ~/.config/alacritty
+
+# background
+ln -s ~/dotfiles/backgrounds ~/backgrounds
+
+# picom
+ln -s ~/dotfiles/.config/picom ~/.config/picom
 
