@@ -199,9 +199,10 @@ focus_follows_mouse no
 # lock keybind
 bindsym $mod+l exec ~/.config/i3lock-color/lock.sh
 
-# i3 stuff
-
+# i3-gaps stuff
 for_window [class="^.*"] border none
+gaps inner 10
+gaps outer 0
 
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

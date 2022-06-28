@@ -25,7 +25,7 @@ ttf-ubuntu-font-family \
 materia-gtk-theme \
 papirus-icon-theme \
 lxappearance \
-i3-wm \
+i3-gaps \
 i3status \
 i3blocks \
 reflector \
