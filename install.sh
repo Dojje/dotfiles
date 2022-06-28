@@ -95,7 +95,7 @@ mkdir -p ~/.config/i3status/
 ln -s ~/dotfiles/.config/i3status/i3status.conf ~/.config/i3status/i3status.conf
 
 # for rofi config
-ln -s ~/dotfiles/.config/rofi/ ~/.config/rofi/
+ln -s ~/dotfiles/.config/rofi ~/.config/rofi
 
 # For xinitrc
 ln -s ~/dotfiles/.xinitrc ~/.xinitrc
