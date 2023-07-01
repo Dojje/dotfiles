@@ -124,3 +124,7 @@ ln -s ~/dotfiles/backgrounds ~/backgrounds
 # picom
 ln -s ~/dotfiles/.config/picom ~/.config/picom
 
+sudo cp ~/dotfiles/30-touchpad.conf /etc/X11/xorg.conf.d/
+
+echo "you should now install yay and rerun this script"
+

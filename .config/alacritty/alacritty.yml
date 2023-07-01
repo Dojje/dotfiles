@@ -122,7 +122,7 @@ font:
     family: monospace
     style: Bold Italic
 
-  size: 13.0
+  size: 10.0
 
   offset:
     x: 0
